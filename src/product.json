@@ -1,6 +1,6 @@
 [
     {
-      "id": 1,
+      "productId": 1,
       "description": "Super Long Product Name 1",
       "brand": "Brand 1",
       "packing": "10/32OZ",
@@ -10,7 +10,7 @@
       "status":""
     },
     {
-      "id": 2,
+      "productId": 2,
       "description": "Very Long Product Name 2",
       "brand": "Brand 2",
       "packing": "20/64OZ",
@@ -20,7 +20,7 @@
       "status":""
     },
     {
-      "id": 3,
+      "productId": 3,
       "description": "Extremely Long Product Name 3",
       "brand": "Brand 3",
       "packing": "5/16OZ",
@@ -30,7 +30,7 @@
       "status":""
     },
     {
-      "id": 4,
+      "productId": 4,
       "description": "Unbelievably Long Product Name 4",
       "brand": "Brand 4",
       "packing": "15/24OZ",
@@ -40,7 +40,7 @@
       "status":""
     },
     {
-      "id": 5,
+      "productId": 5,
       "description": "Mega Long Product Name 5",
       "brand": "Brand 5",
       "packing": "12/48OZ",
@@ -50,7 +50,7 @@
       "status":""
     },
     {
-      "id": 6,
+      "productId": 6,
       "description": "Huge Long Product Name 6",
       "brand": "Brand 6",
       "packing": "8/16OZ",

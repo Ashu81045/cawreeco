@@ -1,8 +1,8 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { updateOrderStatus } from '../redux/dataSlice';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 
 const BreadcrumbsContainer = styled.div`
@@ -65,19 +65,37 @@ const EllipticalButtonHollow = styled.button`
     font-weight:500
 `;
 const EllipticalButtonFilled = styled.button`
-    background-color: #205d20;
+    background-color: ${(props) =>
+      props.orderStatus
+        ? 'grey'
+        : 'green'};
     color: white;
     font-weight: bold;
     cursor: pointer;
     border: 1px solid #f0f0f0;
     border-radius: 26px;
     font-size: 12px;
-    font-weight:500
+    font-weight:500;
+    color: ${(props) =>
+      props.orderStatus
+        ? 'white'
+        : 'white'};
 `;
 
 
 const Breadcrumbs = ({ paths, orderId, showButton }) => {
+  const [disabled, setDisabled] = useState(false);
   const dispatch = useDispatch();
+  const orderArray = useSelector((state) => state.orders.orders.find((o) => o.orderId === orderId));
+
+  useEffect(() => {
+    if(showButton){
+      if(orderArray.order_status === "Approved"){
+        setDisabled(true);
+      }
+  }
+
+  },[orderArray?.order_status])
 
   const handleOrderApprove = () => {
     dispatch(updateOrderStatus({
@@ -100,7 +118,7 @@ const Breadcrumbs = ({ paths, orderId, showButton }) => {
       </LeftSection>
       {showButton && <RightSection>
         <BreadcrumbItem to="/orders" >Back</BreadcrumbItem>
-        <EllipticalButtonFilled onClick={handleOrderApprove}>Approve order</EllipticalButtonFilled>
+        <EllipticalButtonFilled disabled={disabled} orderStatus={disabled} onClick={handleOrderApprove}>{disabled ?'Approved':'Approve order'}</EllipticalButtonFilled>
       </RightSection>}
     </SectionContainer>
     </BreadcrumbsContainer>

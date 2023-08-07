@@ -129,30 +129,30 @@ const AddItem = (props) => {
     );
     }
 
+
     // Update the search list data state with the filtered products
     setSearchListData(filteredProducts);
   };
-
   const handlePriceChange = (id, price) => {
     // Check if the price is a valid number
     if (!isNaN(price)) {
       // Implement the logic to update the price of a product with the given id
       // For example:
       const updatedProducts = products.map((product) =>
-        product.id === id ? { ...product, price } : product
+        product?.productId === id ? { ...product, price } : product
       );
       // Update the state with the updated products
       setProducts(updatedProducts);
       // Add the updated product to the updatedProductArr
       setUpdatedProductArr((prevArr) => {
-        const existingProductIndex = prevArr.findIndex((product) => product.id === id);
+        const existingProductIndex = prevArr.findIndex((product) => product.productId === id);
         if (existingProductIndex !== -1) {
           // If the product already exists in the updatedProductArr, update its price
           prevArr[existingProductIndex].price = price;
           return [...prevArr];
         } else {
           // If the product is not already in the updatedProductArr, add it
-          const updatedProduct = products.find((product) => product.id === id);
+          const updatedProduct = products.find((product) => product.productId === id);
           return [...prevArr, { ...updatedProduct, price }];
         }
       });
@@ -164,21 +164,20 @@ const AddItem = (props) => {
     if (!isNaN(quantity)) {
       // Implement the logic to update the quantity of a product with the given id
       // For example:
-      const updatedProducts = products.map((product) =>
-        product.id === id ? { ...product, quantity } : product
+      const updatedProducts = products.map((product) => product.productId === id ? { ...product, quantity } : product
       );
       // Update the state with the updated products
       setProducts(updatedProducts);
       // Add the updated product to the updatedProductArr
       setUpdatedProductArr((prevArr) => {
-        const existingProductIndex = prevArr.findIndex((product) => product.id === id);
+        const existingProductIndex = prevArr.findIndex((product) => product.productId === id);
         if (existingProductIndex !== -1) {
           // If the product already exists in the updatedProductArr, update its quantity
           prevArr[existingProductIndex].quantity = quantity;
           return [...prevArr];
         } else {
           // If the product is not already in the updatedProductArr, add it
-          const updatedProduct = products.find((product) => product.id === id);
+          const updatedProduct = products.find((product) => product.productId === id);
           return [...prevArr, { ...updatedProduct, quantity }];
         }
       });
@@ -220,7 +219,7 @@ const AddItem = (props) => {
         </thead>
         <tbody>
           {searchListData.map((product) => (
-            <TableRow key={product.id}>
+            <TableRow key={product.productId}>
               <TableCell>
                 <ProductImage src={Avocado} alt={product.name} />
               </TableCell>
@@ -231,14 +230,14 @@ const AddItem = (props) => {
                 <input
                   type="number"
                   value={product.price}
-                  onChange={(e) => handlePriceChange(product.id, e.target.value)}
+                  onChange={(e) => handlePriceChange(product.productId, e.target.value)}
                   disabled={review}
                 />
               </EditableCell>
               <EditableCell>
                 <input
                   type="number"
-                  onChange={(e) => handleQuantityChange(product.id, e.target.value)}
+                  onChange={(e) => handleQuantityChange(product.productId, e.target.value)}
                   disabled={review}
                 />
               </EditableCell>

@@ -66,7 +66,7 @@
       "department": "123-456-677",
       "category": ["Electronics", "Clothing", "Home & Kitchen"],
       "supplier": "Supplier A",
-      "order_status": "Approved",
+      "order_status": "Waiting for Approval",
       "product": [
         {
           "productId": 1001,
@@ -266,7 +266,7 @@
       "department": "123-456-681",
       "category": ["Home & Kitchen"],
       "supplier": "Supplier E",
-      "order_status": "Approved",
+      "order_status": "Waiting for Approval",
       "product": [
         {
           "productId": 5001,

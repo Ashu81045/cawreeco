@@ -144,6 +144,7 @@ const TableBody = (props) => {
     const [modalOpen, setModalOpen] = useState(false);
     const [modalType, setModalType] = useState('');
     const dispatch = useDispatch();
+    const orderArray = useSelector((state) => state.orders.orders.find((o) => o.orderId === orderId));
     const handleOpenModal = () => {
         setModalOpen(true);
     };
@@ -210,11 +211,13 @@ const TableBody = (props) => {
                             <span>{status}</span>
                         </StatusChip>
                     </Width60Div>
-                    <div >
+                    {orderArray.order_status!=="Approved" &&
+                      <div>
                         <FontAwesomeIcon icon={faCheck} color="green" onClick={() => handleApprove(productId)} />
-                        <FontAwesomeIcon icon={faTimes} color="red" onClick={handleOpenModal} />
-                        <FontAwesomeIcon icon={faEdit} onClick={()=>handleEdit('edit')}  />
-                    </div>
+                          <FontAwesomeIcon icon={faTimes} color="red" onClick={handleOpenModal} />
+                          <FontAwesomeIcon icon={faEdit} onClick={()=>handleEdit('edit')}  /> 
+                      </div>
+                    }
                 </StatusInnerCell>
             </StatusCell>
             <CustomModal open={modalOpen} onClose={handleCloseModal}>
