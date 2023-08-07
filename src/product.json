@@ -1,0 +1,63 @@
+[
+    {
+      "id": 1,
+      "description": "Super Long Product Name 1",
+      "brand": "Brand 1",
+      "packing": "10/32OZ",
+      "price": 10,
+      "quantity": 0,
+      "image": "path_to_product_image1.jpg",
+      "status":""
+    },
+    {
+      "id": 2,
+      "description": "Very Long Product Name 2",
+      "brand": "Brand 2",
+      "packing": "20/64OZ",
+      "price": 15,
+      "quantity": 0,
+      "image": "path_to_product_image2.jpg",
+      "status":""
+    },
+    {
+      "id": 3,
+      "description": "Extremely Long Product Name 3",
+      "brand": "Brand 3",
+      "packing": "5/16OZ",
+      "price": 0,
+      "quantity": 25,
+      "image": "path_to_product_image3.jpg",
+      "status":""
+    },
+    {
+      "id": 4,
+      "description": "Unbelievably Long Product Name 4",
+      "brand": "Brand 4",
+      "packing": "15/24OZ",
+      "price": 12,
+      "quantity": 0,
+      "image": "path_to_product_image4.jpg",
+      "status":""
+    },
+    {
+      "id": 5,
+      "description": "Mega Long Product Name 5",
+      "brand": "Brand 5",
+      "packing": "12/48OZ",
+      "price": 18,
+      "quantity": 0,
+      "image": "path_to_product_image5.jpg",
+      "status":""
+    },
+    {
+      "id": 6,
+      "description": "Huge Long Product Name 6",
+      "brand": "Brand 6",
+      "packing": "8/16OZ",
+      "price": 9,
+      "quantity": 0,
+      "image": "path_to_product_image6.jpg",
+      "status":""
+    }
+  ]
+  

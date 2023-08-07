@@ -1,0 +1,364 @@
+{
+  "orders": [
+    {
+      "orderId": "order_011",
+      "shippingDate": "2023-11-02",
+      "department": "123-456-687",
+      "category": ["Home & Kitchen"],
+      "supplier": "Supplier K",
+      "order_status": "Waiting for Approval",
+      "product": [
+        {
+          "productId": 11001,
+          "productName": "Air Fryer",
+          "description": "Healthy cooking with less oil using an air fryer.",
+          "price": 89,
+          "quantity": 15,
+          "status": "",
+          "brand": "Brand S",
+          "image_url": "/images/air_fryer.jpg"
+        },
+        {
+          "productId": 11002,
+          "productName": "Robotic Vacuum",
+          "description": "Automated robotic vacuum for effortless cleaning.",
+          "price": 199,
+          "quantity": 10,
+          "status": "",
+          "brand": "Brand T",
+          "image_url": "/images/robotic_vacuum.jpg"
+        },
+        {
+          "productId": 11003,
+          "productName": "Electric Kettle",
+          "description": "Fast-boiling electric kettle for hot beverages.",
+          "price": 39,
+          "quantity": 30,
+          "status": "",
+          "brand": "Brand U",
+          "image_url": "/images/electric_kettle.jpg"
+        },
+        {
+          "productId": 11004,
+          "productName": "Toaster Oven",
+          "description": "Versatile toaster oven for toasting and baking.",
+          "price": 79,
+          "quantity": 25,
+          "status": "",
+          "brand": "Brand V",
+          "image_url": "/images/toaster_oven.jpg"
+        },
+        {
+          "productId": 11005,
+          "productName": "Coffee Grinder",
+          "description": "High-quality coffee grinder for fresh coffee grounds.",
+          "price": 49,
+          "quantity": 20,
+          "status": "",
+          "brand": "Brand W",
+          "image_url": "/images/coffee_grinder.jpg"
+        }
+      ]
+    },
+    {
+      "orderId": "order_001",
+      "shippingDate": "2023-09-15",
+      "department": "123-456-677",
+      "category": ["Electronics", "Clothing", "Home & Kitchen"],
+      "supplier": "Supplier A",
+      "order_status": "Approved",
+      "product": [
+        {
+          "productId": 1001,
+          "productName": "Smartphone",
+          "description": "High-performance smartphone with the latest features.",
+          "price": 499,
+          "quantity": 50,
+          "status": "In Stock",
+          "brand": "Brand X",
+          "image_url": "/images/smartphone.jpg"
+        }
+      ]
+    },
+    {
+      "orderId": "order_012",
+      "shippingDate": "2023-11-05",
+      "department": "123-456-688",
+      "category": ["Electronics"],
+      "supplier": "Supplier L",
+      "order_status": "Approved",
+      "product": [
+        {
+          "productId": 12001,
+          "productName": "Smart TV",
+          "description": "High-definition smart TV for entertainment.",
+          "price": 699,
+          "quantity": 5,
+          "status": "",
+          "brand": "Brand X",
+          "image_url": "/images/smart_tv.jpg"
+        },
+        {
+          "productId": 12002,
+          "productName": "Smartwatch",
+          "description": "Smartwatch with fitness tracking and notifications.",
+          "price": 149,
+          "quantity": 15,
+          "status": "",
+          "brand": "Brand Y",
+          "image_url": "/images/smartwatch.jpg"
+        },
+        {
+          "productId": 12003,
+          "productName": "Digital Camera",
+          "description": "High-performance digital camera for photography.",
+          "price": 499,
+          "quantity": 8,
+          "status": "",
+          "brand": "Brand Z",
+          "image_url": "/images/digital_camera.jpg"
+        },
+        {
+          "productId": 12004,
+          "productName": "Wireless Headphones",
+          "description": "Wireless headphones with noise-cancellation.",
+          "price": 129,
+          "quantity": 12,
+          "status": "",
+          "brand": "Brand P",
+          "image_url": "/images/wireless_headphones.jpg"
+        },
+        {
+          "productId": 12005,
+          "productName": "Power Bank",
+          "description": "Portable power bank for charging on-the-go.",
+          "price": 39,
+          "quantity": 30,
+          "status": "",
+          "brand": "Brand Q",
+          "image_url": "/images/power_bank.jpg"
+        }
+      ]
+    },
+    {
+      "orderId": "order_013",
+      "shippingDate": "2023-11-10",
+      "department": "123-456-689",
+      "category": ["Home & Kitchen"],
+      "supplier": "Supplier M",
+      "order_status": "Approved",
+      "product": [
+        {
+          "productId": 13001,
+          "productName": "Microwave Oven",
+          "description": "Convenient microwave oven for quick cooking.",
+          "price": 129,
+          "quantity": 10,
+          "status": "",
+          "brand": "Brand R",
+          "image_url": "/images/microwave_oven.jpg"
+        },
+        {
+          "productId": 13002,
+          "productName": "Electric Blender",
+          "description": "Powerful electric blender for blending and pureeing.",
+          "price": 79,
+          "quantity": 20,
+          "status": "",
+          "brand": "Brand S",
+          "image_url": "/images/electric_blender.jpg"
+        },
+        {
+          "productId": 13003,
+          "productName": "Rice Cooker",
+          "description": "Efficient rice cooker for perfectly cooked rice.",
+          "price": 49,
+          "quantity": 15,
+          "status": "",
+          "brand": "Brand T",
+          "image_url": "/images/rice_cooker.jpg"
+        },
+        {
+          "productId": 13004,
+          "productName": "Vacuum Sealer",
+          "description": "Vacuum sealer for food storage and preservation.",
+          "price": 59,
+          "quantity": 8,
+          "status": "",
+          "brand": "Brand U",
+          "image_url": "/images/vacuum_sealer.jpg"
+        },
+        {
+          "productId": 13005,
+          "productName": "Electric Grill",
+          "description": "Electric grill for indoor grilling and barbecue.",
+          "price": 89,
+          "quantity": 12,
+          "status": "",
+          "brand": "Brand V",
+          "image_url": "/images/electric_grill.jpg"
+        }
+      ]
+    },
+    {
+      "orderId": "order_002",
+      "shippingDate": "2023-09-17",
+      "department": "123-456-678",
+      "category": ["Electronics", "Home & Kitchen"],
+      "supplier": "Supplier B",
+      "order_status": "Waiting for Approval",
+      "product": [
+        {
+          "productId": 2001,
+          "productName": "Laptop",
+          "description": "Powerful laptop for work and entertainment.",
+          "price": 899,
+          "quantity": 20,
+          "status": "",
+          "brand": "Brand P",
+          "image_url": "/images/laptop.jpg"
+        }
+      ]
+    },
+    {
+      "orderId": "order_003",
+      "shippingDate": "2023-09-20",
+      "department": "123-456-679",
+      "category": ["Clothing"],
+      "supplier": "Supplier C",
+      "order_status": "Approved",
+      "product": [
+        {
+          "productId": 3001,
+          "productName": "Jeans",
+          "description": "Stylish and comfortable jeans for everyday wear.",
+          "price": 59,
+          "quantity": 60,
+          "status": "",
+          "brand": "Brand R",
+          "image_url": "/images/jeans.jpg"
+        }
+      ]
+    },
+    {
+      "orderId": "order_004",
+      "shippingDate": "2023-09-25",
+      "department": "123-456-680",
+      "category": ["Electronics"],
+      "supplier": "Supplier D",
+      "order_status": "Waiting for Approval",
+      "product": [
+        {
+          "productId": 4001,
+          "productName": "Headphones",
+          "description": "High-quality headphones for immersive audio experience.",
+          "price": 129,
+          "quantity": 30,
+          "status": "",
+          "brand": "Brand S",
+          "image_url": "/images/headphones.jpg"
+        }
+      ]
+    },
+    {
+      "orderId": "order_005",
+      "shippingDate": "2023-09-30",
+      "department": "123-456-681",
+      "category": ["Home & Kitchen"],
+      "supplier": "Supplier E",
+      "order_status": "Approved",
+      "product": [
+        {
+          "productId": 5001,
+          "productName": "Cookware Set",
+          "description": "Complete cookware set for all your cooking needs.",
+          "price": 199,
+          "quantity": 25,
+          "status": "",
+          "brand": "Brand T",
+          "image_url": "/images/cookware_set.jpg"
+        }
+      ]
+    },
+    {
+      "orderId": "order_006",
+      "shippingDate": "2023-10-05",
+      "department": "123-456-682",
+      "category": ["Clothing", "Electronics"],
+      "supplier": "Supplier F",
+      "order_status": "Waiting for Approval",
+      "product": [
+        {
+          "productId": 6001,
+          "productName": "Smartwatch",
+          "description": "Smartwatch with fitness tracking and health monitoring features.",
+          "price": 159,
+          "quantity": 40,
+          "status": "",
+          "brand": "Brand U",
+          "image_url": "/images/smartwatch.jpg"
+        }
+      ]
+    },
+    {
+      "orderId": "order_007",
+      "shippingDate": "2023-10-10",
+      "department": "123-456-683",
+      "category": ["Home & Kitchen"],
+      "supplier": "Supplier G",
+      "order_status": "Approved",
+      "product": [
+        {
+          "productId": 7001,
+          "productName": "Air Fryer",
+          "description": "Air fryer for healthy and delicious cooking.",
+          "price": 89,
+          "quantity": 15,
+          "status": "",
+          "brand": "Brand V",
+          "image_url": "/images/air_fryer.jpg"
+        }
+      ]
+    },
+    {
+      "orderId": "order_008",
+      "shippingDate": "2023-10-15",
+      "department": "123-456-684",
+      "category": ["Electronics", "Home & Kitchen"],
+      "supplier": "Supplier H",
+      "order_status": "Waiting for Approval",
+      "product": [
+        {
+          "productId": 8001,
+          "productName": "Wireless Earbuds",
+          "description": "True wireless earbuds for music and calls.",
+          "price": 79,
+          "quantity": 50,
+          "status": "",
+          "brand": "Brand W",
+          "image_url": "/images/wireless_earbuds.jpg"
+        }
+      ]
+    },
+    {
+      "orderId": "order_009",
+      "shippingDate": "2023-10-20",
+      "department": "123-456-685",
+      "category": ["Clothing"],
+      "supplier": "Supplier I",
+      "order_status": "Approved",
+      "product": [
+        {
+          "productId": 9001,
+          "productName": "Dress",
+          "description": "Elegant dress for special occasions.",
+          "price": 129,
+          "quantity": 30,
+          "status": "",
+          "brand": "Brand X",
+          "image_url": "/images/dress.jpg"
+        }
+      ]
+    }
+  ]
+}
